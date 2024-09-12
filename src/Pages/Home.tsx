@@ -26,7 +26,12 @@ function Home() {
     });
   };
   useEffect(() => {
-    console.log("home");
+    const fetch = async () => {
+      console.log("home");
+      const d = await (window as any).sqlite.personDB();
+      console.log(d);
+    };
+    fetch();
   }, []);
   const login = async () => {
     try {

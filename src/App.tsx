@@ -3,7 +3,6 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import Layout from "./Pages/Layout";
 import NoPage from "./Pages/NoPage";
-import Login from "./Pages/Login";
 import Users from "./Pages/Users";
 import Emplyees from "./Pages/Emplyees";
 import Home from "./Pages/Home";
@@ -16,7 +15,6 @@ function App() {
       <HashRouter basename="/">
         <Routes>
           <Route path="/" index element={<Home />} />
-          <Route path="/Login" element={<Login />} />
           <Route path="/dashboard" element={<Layout />}>
             <Route path="Users" element={<Users />} />
             <Route path="Emplyees" element={<Emplyees />} />
